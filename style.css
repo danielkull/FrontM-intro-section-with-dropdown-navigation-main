@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Epilogue", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  --almost-white: hsl(0, 0%, 98%);
+  --Medium-gray: hsl(0, 0%, 41%);
+  --almost-black: hsl(0, 0%, 8%);
+  --color-a: hsl(228, 45%, 44%);
+}
+
+.background_image {
+  background-image: url(images/image-hero-desktop.png);
+  object-fit: cover;
+}
+
+@media screen (max-width: 375px) {
+  .background_image {
+    background-image: url(images/image-hero-mobile.png);
+    object-fit: cover;
+  }
+}
+
+/*------------------------------------------------------------------------------*/
+/*-----------------------von Frontend für Footer Links---------------------------------------------*/
+/*------------------------------------------------------------------------------*/
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--color-a);
+}
