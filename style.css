@@ -36,7 +36,7 @@ header {
   object-fit: cover;
 }
 
-@media screen (max-width: 375px) {
+@media screen and (max-width: 375px) {
   .background_image {
     background-image: url(images/image-hero-mobile.png);
     object-fit: cover;
