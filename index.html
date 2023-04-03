@@ -7,48 +7,94 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
-<body>
+<header class="nav">
+  <div class="snap_img">
+    <img src="images/logo.svg" alt="das Logo von snap">
+  </div>
+  <ul class="nav_header">
+    <!-------------------------Features--------------------------------------->
+    <li class="nav_menue">Features
+      <ul class="sub_nav">
+        <li><span class="list_img"><img src="images/icon-todo.svg" alt="Image of a List"></span>Todo List</li>
+        <li><span class="list_img"><img src="images/icon-calendar.svg" alt="Image of a Calendar"></span>Calendar</li>
+        <li><span class="list_img"><img src="images/icon-reminders.svg" alt="Image of a Bell"></span>Reminders</li>
+        <li><span class="list_img"><img src="images/icon-planning.svg" alt="Image of a Clock"></span>Planning</li>
+      </ul>
+    </li>
+    <!-------------------------Features-End-------------------------------------->
+    <!---------------------------Company--------------------------------->
+    <li class="nav_menue">Company
+      <ul class="sub_nav">
+        <li></span>History</li>
+        <li></span>Our team</li>
+        <li></span>Blog</li>
+      </ul>
+    </li>
+    <!---------------------------Company-End-------------------------------->
+    <!---------------------------Carres and About-------------------------------->
+    <li class="nav_menue">Careers</li>
+    <li class="nav_menue">About</li>
+  </ul>
+  <!-------------------------Carres and About-End-------------------------------------->
+  <!---------------------------List End--------------------------------->
+  <!-------------------------------------------------------------------------------->
+  <!--------------------------------Buttons---------------------------------------->
 
-  Features
-  Company
-  Careers
-  About
-  <main>
-    <div class="test"></div>
-    <div class="test"></div>
-    <div class="test"></div>
-    <div class="test"></div>
-  </main>
-  Login
-  Register
+  <div class="buttons_nav">
+    <button id="login">Login</button>
+    <button id="register">Register</button>
+  </div>
+  <!--------------------------------Buttons--End------------------------------------->
+</header>
 
-  Make remote work
+<main>
+  <article class="main_content">
+    <!-------------------Main-Text Content----------------------------------->
+    <section class="txt_content">
 
-  Get your team in sync, no matter your location. Streamline processes,
-  create team rituals, and watch productivity soar.
+      <h1 class="main_header">Make<br> remote work</h1>
 
-  Learn more
+      <p class="main_txt">Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.</p>
+
+      <button id="learn" class="learn_button">Learn more</button>
+      <!------------------Client Logos---------------------------------->
+      <aside class="client_logos">
+        <div class="clients"><img src="images/client-databiz.svg" alt="Logo von databizes"></div>
+        <div class="clients"><img src="images/client-audiophile.svg" alt="Logo von aufiophile"></div>
+        <div class="clients"><img src="images/client-meet.svg" alt="Logo von meet"></div>
+        <div class="clients"><img src="images/client-maker.svg" alt="Logo von maker"></div>
+      </aside>
+    </section>
+    <!--------------------Background-Image--------------------------------->
+    <section class="background">
+
+      <div class="background_image"></div>
+
+    </section>
+
+
+
+  </article>
+
+
+
+</main>
+
+<footer>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
-</body>
 
-</html>
+</footer>
