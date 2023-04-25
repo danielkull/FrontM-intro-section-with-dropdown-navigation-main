@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link
     href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
     rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
@@ -22,48 +24,70 @@
     <div class="snap_img">
       <img src="images/logo.svg" alt="das Logo von snap">
     </div>
-    <ul class="nav_header">
-      <!-------------------------Features--------------------------------------->
-      <li class="nav_menue">Features
-        <ul class="sub_nav">
-          <li><span class="list_img"><img src="images/icon-todo.svg" alt="Image of a List"></span>Todo List</li>
-          <li><span class="list_img"><img src="images/icon-calendar.svg" alt="Image of a Calendar"></span>Calendar</li>
-          <li><span class="list_img"><img src="images/icon-reminders.svg" alt="Image of a Bell"></span>Reminders</li>
-          <li><span class="list_img"><img src="images/icon-planning.svg" alt="Image of a Clock"></span>Planning</li>
-        </ul>
-      </li>
-      <!-------------------------Features-End-------------------------------------->
-      <!---------------------------Company--------------------------------->
-      <li class="nav_menue">Company
-        <ul class="sub_nav">
-          <li></span>History</li>
-          <li></span>Our team</li>
-          <li></span>Blog</li>
-        </ul>
-      </li>
-      <!---------------------------Company-End-------------------------------->
-      <!---------------------------Carres and About-------------------------------->
-      <li class="nav_menue">Careers</li>
-      <li class="nav_menue">About</li>
-    </ul>
-    <!-------------------------Carres and About-End-------------------------------------->
-    <!---------------------------List End--------------------------------->
-    <!-------------------------------------------------------------------------------->
-    <!--------------------------------Buttons---------------------------------------->
+    <label id="hamburger_menue" for="check">
+      <input type="checkbox" name="check" id="check">
+      <img src="images/icon-menu.svg" alt="">
 
-    <div class="buttons_nav">
-      <button id="login">Login</button>
-      <button id="register">Register</button>
-    </div>
-    <!--------------------------------Buttons--End------------------------------------->
+      <section class="nav_wrapper">
+        <article class="nav_holder">
+          <span class="close_menue">
+            <label for="check_out">
+              <input type="checkbox" name="check-out" id="check_out">
+              <img src="images/icon-close-menu.svg" class="close_img" alt="">
+          </span>
+
+          <ul class="nav_header">
+            <!-------------------------Features--------------------------------------->
+            <li class="nav_menue"><label for="list_sublist">Features <input type="checkbox" name="" id="list_sublist">
+                <ul class="sub_nav">
+                  <li><span class="list_img"><img src="images/icon-todo.svg" alt=""></span>Todo List</li>
+                  <li><span class="list_img"><img src="images/icon-calendar.svg" alt=""></span>Calendar
+                  </li>
+                  <li><span class="list_img"><img src="images/icon-reminders.svg" alt=""></span>Reminders</li>
+                  <li><span class="list_img"><img src="images/icon-planning.svg" alt=""></span>Planning</li>
+                </ul>
+            </li>
+            <!-------------------------Features-End-------------------------------------->
+            <!---------------------------Company--------------------------------->
+            <li class="nav_menue"><label for="list_sublist_two">Company<input type="checkbox" name=""
+                  id="list_sublist_two">
+                <ul class="sub_nav">
+                  <li>History</li>
+                  <li>Our team</li>
+                  <li>Blog</li>
+                </ul>
+            </li>
+            <!---------------------------Company-End-------------------------------->
+            <!---------------------------Carres and About-------------------------------->
+            <li class="nav_menue">Careers</li>
+            <li class="nav_menue">About</li>
+          </ul>
+          <!-------------------------Carres and About-End-------------------------------------->
+          <!---------------------------List End--------------------------------->
+          <!-------------------------------------------------------------------------------->
+          <!--------------------------------Buttons---------------------------------------->
+
+          <div class="buttons_nav">
+            <button id="login">Login</button>
+            <button id="register">Register</button>
+          </div>
+        </article>
+      </section>
+      <!--------------------------------Buttons--End------------------------------------->
   </header>
 
   <main>
     <article class="main_content">
       <!-------------------Main-Text Content----------------------------------->
-      <section class="txt_content">
 
-        <h1 class="main_header">Make<br> remote work</h1>
+      <section class="img_holder">
+        <img src="images/image-hero-mobile.png" class="img_wrapper" alt="">
+
+      </section>
+
+
+      <section class="txt_content">
+        <h1 class="main_header">Make remote work</h1>
 
         <p class="main_txt">Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.</p>
@@ -101,8 +125,7 @@
 
   </footer>
 
-  <script src="script.js"></script>
-
 </body>
+
 
 </html>
