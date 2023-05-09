@@ -16,85 +16,114 @@
 
 </head>
 
-<header class="nav">
-  <div class="snap_img">
-    <img src="images/logo.svg" alt="das Logo von snap">
-  </div>
-  <ul class="nav_header">
-    <!-------------------------Features--------------------------------------->
-    <li class="nav_menue">Features
-      <ul class="sub_nav">
-        <li><span class="list_img"><img src="images/icon-todo.svg" alt="Image of a List"></span>Todo List</li>
-        <li><span class="list_img"><img src="images/icon-calendar.svg" alt="Image of a Calendar"></span>Calendar</li>
-        <li><span class="list_img"><img src="images/icon-reminders.svg" alt="Image of a Bell"></span>Reminders</li>
-        <li><span class="list_img"><img src="images/icon-planning.svg" alt="Image of a Clock"></span>Planning</li>
-      </ul>
-    </li>
-    <!-------------------------Features-End-------------------------------------->
-    <!---------------------------Company--------------------------------->
-    <li class="nav_menue">Company
-      <ul class="sub_nav">
-        <li></span>History</li>
-        <li></span>Our team</li>
-        <li></span>Blog</li>
-      </ul>
-    </li>
-    <!---------------------------Company-End-------------------------------->
-    <!---------------------------Carres and About-------------------------------->
-    <li class="nav_menue">Careers</li>
-    <li class="nav_menue">About</li>
-  </ul>
-  <!-------------------------Carres and About-End-------------------------------------->
-  <!---------------------------List End--------------------------------->
-  <!-------------------------------------------------------------------------------->
-  <!--------------------------------Buttons---------------------------------------->
-
-  <div class="buttons_nav">
-    <button id="login">Login</button>
-    <button id="register">Register</button>
-  </div>
-  <!--------------------------------Buttons--End------------------------------------->
-</header>
-
-<main>
-  <article class="main_content">
-    <!-------------------Main-Text Content----------------------------------->
-    <section class="txt_content">
-
-      <h1 class="main_header">Make<br> remote work</h1>
-
-      <p class="main_txt">Get your team in sync, no matter your location. Streamline processes,
-        create team rituals, and watch productivity soar.</p>
-
-      <button id="learn" class="learn_button">Learn more</button>
-      <!------------------Client Logos---------------------------------->
-      <aside class="client_logos">
-        <div class="clients"><img src="images/client-databiz.svg" alt="Logo von databizes"></div>
-        <div class="clients"><img src="images/client-audiophile.svg" alt="Logo von aufiophile"></div>
-        <div class="clients"><img src="images/client-meet.svg" alt="Logo von meet"></div>
-        <div class="clients"><img src="images/client-maker.svg" alt="Logo von maker"></div>
-      </aside>
-    </section>
-    <!--------------------Background-Image--------------------------------->
-    <section class="background">
-
-      <div class="background_image"></div>
-
-    </section>
+<body>
 
 
+  <header class="nav">
+    <div class="snap_img">
+      <img src="images/logo.svg" alt="das Logo von snap">
+    </div>
+    <label id="hamburger_menue" for="check">
+      <input type="checkbox" name="check" id="check">
+      <img src="images/icon-menu.svg" alt="">
 
-  </article>
+      <section class="nav_wrapper">
+        <article class="nav_holder">
+          <span class="close_menue">
+            <label for="check_out">
+              <input type="checkbox" name="check-out" id="check_out">
+              <img src="images/icon-close-menu.svg" class="close_img" alt="">
+          </span>
+
+          <ul class="nav_header">
+            <!-------------------------Features--------------------------------------->
+            <li class="nav_menue"><label for="list_sublist">Features <input type="checkbox" name="" id="list_sublist">
+                <ul class="sub_nav">
+                  <li><span class="list_img"><img src="images/icon-todo.svg" alt=""></span>Todo List</li>
+                  <li><span class="list_img"><img src="images/icon-calendar.svg" alt=""></span>Calendar
+                  </li>
+                  <li><span class="list_img"><img src="images/icon-reminders.svg" alt=""></span>Reminders</li>
+                  <li><span class="list_img"><img src="images/icon-planning.svg" alt=""></span>Planning</li>
+                </ul>
+            </li>
+            <!-------------------------Features-End-------------------------------------->
+            <!---------------------------Company--------------------------------->
+            <li class="nav_menue"><label for="list_sublist_two">Company<input type="checkbox" name=""
+                  id="list_sublist_two">
+                <ul class="sub_nav">
+                  <li>History</li>
+                  <li>Our team</li>
+                  <li>Blog</li>
+                </ul>
+            </li>
+            <!---------------------------Company-End-------------------------------->
+            <!---------------------------Carres and About-------------------------------->
+            <li class="nav_menue">Careers</li>
+            <li class="nav_menue">About</li>
+          </ul>
+          <!-------------------------Carres and About-End-------------------------------------->
+          <!---------------------------List End--------------------------------->
+          <!-------------------------------------------------------------------------------->
+          <!--------------------------------Buttons---------------------------------------->
+
+          <div class="buttons_nav">
+            <button id="login">Login</button>
+            <button id="register">Register</button>
+          </div>
+        </article>
+      </section>
+      <!--------------------------------Buttons--End------------------------------------->
+  </header>
+
+  <main>
+    <article class="main_content">
+      <!-------------------Main-Text Content----------------------------------->
+
+      <section class="img_holder">
+        <img src="images/image-hero-mobile.png" class="img_wrapper" alt="">
+
+      </section>
+
+
+      <section class="txt_content">
+        <h1 class="main_header">Make remote work</h1>
+
+        <p class="main_txt">Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.</p>
+
+        <button id="learn" class="learn_button">Learn more</button>
+        <!------------------Client Logos---------------------------------->
+        <aside class="client_logos">
+          <div class="clients"><img src="images/client-databiz.svg" alt="Logo von databizes"></div>
+          <div class="clients"><img src="images/client-audiophile.svg" alt="Logo von aufiophile"></div>
+          <div class="clients"><img src="images/client-meet.svg" alt="Logo von meet"></div>
+          <div class="clients"><img src="images/client-maker.svg" alt="Logo von maker"></div>
+        </aside>
+      </section>
+      <!--------------------Background-Image--------------------------------->
+      <section class="background">
+
+        <div class="background_image"></div>
+
+      </section>
 
 
 
-</main>
+    </article>
 
-<footer>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 
-</footer>
+  </main>
+
+  <footer>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
